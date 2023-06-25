@@ -1,0 +1,17 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow&family=PT+Sans&display=swap');
+
+
+body{
+    font-family: 'Ubuntu',Arial, Helvetica, sans-serif !important;
+    background-color:rgb(220, 255, 234);
+}
+
+.contact-img{
+    width:150px;
+    border-radius: 50%;
+}
+
+.contact-img-big{
+    width:200px;
+    border-radius: 50%;
+}
