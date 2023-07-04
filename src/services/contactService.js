@@ -1,0 +1,44 @@
+import axios from "axios";
+
+export class contactService{
+    static serverURL=`http://localhost:9000`;
+
+    static getAllContacts(){
+        //create axios requests
+
+        let dataURL=`${this.serverURL}/contacts`;
+        return axios.get(dataURL);
+    }
+
+    static getContacts(contactId){
+        let dataURL=`${this.serverURL}/contacts/${contactId}`;
+        return axios.get(dataURL);
+    }
+
+    static createContact(contact){
+        let dataURL=`${this.serverURL}/contacts/`;
+        return axios.get(dataURL,contact);
+    }
+
+    static updateContact(contact,contactId){
+        let dataURL=`${this.serverURL}/contacts/${contactId}`;
+        return axios.put(dataURL,contact);
+    }
+
+    static deleteContact(contactId){
+        let dataURL=`${this.serverURL}/contacts/${contactId}`;
+        return axios.delete(dataURL);
+    }
+
+    static getAllGroups(){
+        let dataURL=`${this.serverURL}/groups`;
+        return axios.get(dataURL);
+    }
+
+    static getGroup(contact){
+        let groupId=contact.groupId;
+        let dataURL=`${this.serverURL}/group/${groupId}`;
+        return axios.get(dataURL);
+    }
+
+}

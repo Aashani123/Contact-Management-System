@@ -1,4 +1,5 @@
 # vue-contact-manager
+Created this project by referring the youtube video.
 
 ## Project setup
 ```

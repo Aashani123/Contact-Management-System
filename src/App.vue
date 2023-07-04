@@ -1,17 +1,16 @@
 <template>
-<!--  <spinner/>-->
-  <NavBar/>
+<NavBar/>
   <router-view/>  
      <!--  the configurations made in routes get loads  -->
 </template>
 
 <script>
  import NavBar from "@/components/NavBar.vue";
- // import Spinner from "@/components/Spinner.vue";
+ 
 
  export default{
   name:'App',
-   components: { NavBar}
+   components: { NavBar }
  }
 </script>
 
