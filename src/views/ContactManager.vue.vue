@@ -50,7 +50,7 @@
 
 <!-- Error -->
 <div v-if="errorMessage">
-  <div class="container">
+  <div class="container mt-3">
   <div class="row">
     <div class="col">
 <p class="h3 text-danger fw-bold">{{ errorMessage }}</p>    </div>
